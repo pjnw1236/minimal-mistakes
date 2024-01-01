@@ -9,7 +9,6 @@ toc: true
 # test2
 
 # 오늘 처음 블로그를 만들었습니다. 
-## testwe
 
 ![test.png](../images/test.png)
 
