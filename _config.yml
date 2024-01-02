@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "pjnw1236 title"
+title                    : "pjnw1236"
 title_separator          : "|"
-subtitle                 : "pjnw1236 subtitle"
+subtitle                 : # "pjnw1236 subtitle"
 name                     : "pjnw1236"
 description              : "pjnw1236의 블로그입니다."
-url                      : "https://pjnw1236.github.io"
+url                      : # "https://pjnw1236.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "pjnw1236/pjnw1236.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : # "pjnw1236/pjnw1236.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/test.png"
+logo                     : # "/assets/images/test.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -107,7 +107,7 @@ author:
   name             : "pjnw1236"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "pjnw1236 샘플 블로그입니다."
-  location         : # "South Korea"
+  location         : "South Korea"
   email            :
   links:
     - label: "Email"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/pjnw1236"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/pjnw1236"
+      # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -218,7 +218,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -284,9 +284,11 @@ defaults:
       path: ""
       type: posts
     values:
+      sidebar:
+        nav: "docs"
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
       comments: true
       share: true
       related: true
